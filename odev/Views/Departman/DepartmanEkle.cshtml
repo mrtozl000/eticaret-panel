@@ -1,0 +1,14 @@
+﻿@model odev.Models.Siniflar.Departman
+@{
+    ViewBag.Title = "DepartmanEkle";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<h2>Departman Ekle</h2>
+<br />
+<form class="form-group" method="post">
+    @Html.LabelFor(x => x.DepartmanAdi)
+    @Html.TextBoxFor(x => x.DepartmanAdi, new { @class = "Form-Control" })
+    <br />
+    <button class="btn btn-info">Kaydet</button>
+</form>
